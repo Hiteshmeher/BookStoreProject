@@ -1,0 +1,24 @@
+.placed-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.success-logo{
+    width: 20%;
+}
+.thanku{
+    font-size:x-large;
+    font-family: monospace;
+}
+.order-placed{
+    width: 20%;
+    margin-top: 0cm;
+}
+.order-text{
+width: 18%;
+text-align: center;
+}
+.continue-btn{
+    margin-bottom: 0.8cm;
+    background-color: #2874f0;
+}

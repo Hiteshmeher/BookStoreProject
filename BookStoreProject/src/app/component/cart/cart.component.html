@@ -1,0 +1,66 @@
+<mat-vertical-stepper>
+    <mat-step label="My Cart">
+        <div class="part1">
+            <div class="book-image"><img class="book-pic" src="../../../assets/book/book4.jpeg" alt=""></div>
+            <div>
+                <div class="book-title">Hell of A Book</div>
+                <div class="auther-name">By Hitesh Meher</div>
+                <div class="book-price">Rs.1000</div>
+                <div class="part2">
+                <img class="minus" style="height: 20px;" src="../../../assets/minus icon.png" alt="+">
+                <input  class="number" type="text" value="1">
+                <img class="plus" style="height: 20px" src="../../../assets/plus icon.png" alt="-">
+                <span class="remove-text">Remove</span>
+                </div>    
+            </div>
+        </div>
+        <button mat-raised-button class="select-address" matStepperNext >Select Address</button>
+    </mat-step>
+
+    <mat-step label="Customer Details">
+        <div class="cust-detail">
+            <div>
+            <input class="text-input" type="text" name="name" placeholder="Name">
+            <input class="text-input" type="text" name="phoneno" placeholder="Phone number">
+            </div>
+            <div>
+            <input class="text-input" type="text" name="pincode" placeholder="Pin Code">
+            <input class="text-input" type="text" name="locality" placeholder="Locality">
+            </div>
+            <div>
+            <input class="address-input" type="text" name="address" placeholder="Address">
+            </div>
+            <div>
+            <input class="text-input" type="text" name="city" placeholder="City/Town">
+            <input class="text-input" type="text" name="landmark" placeholder="Landmark">
+            </div>
+            <div class="type">
+            Type
+                <mat-radio-group aria-label="Select an option">
+                    <mat-radio-button value="Home">Home</mat-radio-button>
+                    <mat-radio-button value="Office">Office</mat-radio-button>
+                    <mat-radio-button value="Others">Others</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <div>
+            <button mat-button class="back-btn" matStepperPrevious>Back</button>
+            <button mat-raised-button class="next-btn" matStepperNext >Proceed to Checkout</button>
+            </div>
+        </div>
+    </mat-step>
+
+    <mat-step label="Order Summary">
+        <div class="payment">
+            <div class="book-image"><img class="book-summary" src="../../../assets/book/book4.jpeg" alt=""></div>
+            <div>
+            <div class="book-title-summary">Hell of A Book</div>
+            <div class="auther-name-summary">By Hitesh Meher</div>
+            <div class="book-price-summary">Rs.1000</div>
+            </div>
+        </div>
+        <div>
+        <button mat-button class="back-btn" matStepperPrevious>Back</button>
+        <button mat-raised-button class="checkout-btn" matStepperNext (click)="onCheckout()">Checkout</button>
+        </div>
+    </mat-step>
+</mat-vertical-stepper>

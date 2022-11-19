@@ -1,0 +1,64 @@
+
+
+.book2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.book3{
+    grid-row: 1;
+    grid-column: 3;
+}
+.book4{
+    grid-row: 1;
+    grid-column: 4;
+}
+.book{
+    padding: 0.5cm 1cm 1cm 1cm;
+    background-color:#D8D0CE;
+    display: inline-grid;
+    justify-content: center;
+    border-radius: 5px;
+    
+}
+.home-content{
+}
+.book-text{
+    margin-left:4%;
+    font-size: x-large;
+}
+.head{
+    padding: 1cm 0cm 0cm 0cm;
+}
+.item-text{
+    font-size: small;
+}
+.sort-content{
+    margin-left: 76.3%;
+}
+mat-card{
+    display: grid;
+    justify-content: center;
+    gap: 1cm;
+}
+.book-title{
+    font-size: x-large;
+    font-family: fantasy;
+    padding: 10px 0px 0px 0px;
+}
+.auther-name{
+    color: gray;
+    font-size: small;
+    font-style: italic;
+}
+.book-price{
+    font:caption;
+    padding: 5px 0px 5px 0px;
+}
+.add-to-cart{
+    background-color:#ff9f00;
+    width: 2.7cm;
+}
+.wishlist{
+    margin-left: 5px;
+    background-color: white;
+}
