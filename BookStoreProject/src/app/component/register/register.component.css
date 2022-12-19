@@ -1,0 +1,69 @@
+.register-content{
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    width: 60%;
+    height:66%;
+    border: outset;
+    background-color: lightcyan;
+
+}
+.register-text{
+    font-size:0.8cm;
+}
+.register-main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    
+    border-radius: 5px;
+}
+.fname{
+    height: 20px;
+    margin-bottom: 0.2cm;
+    border-color: white;
+}
+.lname{
+    height: 20px;
+    margin-bottom: 0.2cm;
+    border-color: white;
+}.address{
+    height: 20px;
+    margin-bottom: 0.2cm;
+    border-color: white;
+}
+.email-text{
+    height: 20px;
+    margin-bottom: 0.2cm;
+    border-color: white;
+}
+.password-text{
+    height: 20px;
+    margin-bottom: 0.2cm;
+    border-color: white;
+}
+.register-btn{
+    margin-top: 2px;
+
+    background-color: #2874f0;
+    color: white;
+}
+.login-text{
+    margin-top: 0.4cm;
+    align-items: right;
+}
+.login-btn{
+    width: 3cm;
+    background-color: white;
+    color: #2874f0;
+    border-color: #2874f0;
+    border:outset
+}
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+}

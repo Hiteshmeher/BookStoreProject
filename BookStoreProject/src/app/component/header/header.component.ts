@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(private router :Router) { }
+cartAll=localStorage.getItem('CartLength');
+
+  constructor(private router :Router ){ }
 
   ngOnInit(): void {
   }
@@ -18,5 +21,10 @@ export class HeaderComponent implements OnInit {
   }
   onCartClick(){
     this.router.navigate(["cart"]);
+  }
+  onClickLogout(){
+    this.router.navigate([""]);
+    alert("Successfully Logged out");
+
   }
 }

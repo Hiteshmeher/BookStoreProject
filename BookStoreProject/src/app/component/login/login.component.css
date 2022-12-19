@@ -1,0 +1,58 @@
+.login-content{
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 1cm;
+    margin-bottom: 1cm;
+    width: 60%;
+    height:66%;
+    border: outset;
+    background-color: lightcyan;
+
+}
+.login-text{
+    font-size:0.8cm;
+    
+}
+.login-main{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 2cm;
+    border-radius: 5px;
+}
+.email-text{
+    height: 20px;
+    margin-bottom: 0.5cm;
+    width: 10cm;
+    border-color: white;
+}
+.password-text{
+    height: 20px;
+    margin-bottom: 0.5cm;
+    width: 10cm;
+    border-color: white;
+}
+.login-btn{
+    background-color: #2874f0;
+    color: white;
+}
+.register-text{
+    margin-top: 1cm;
+    margin-left: 13%;
+    align-items: right;
+}
+.register-btn{
+    margin-left:1.5%;
+    width: 3cm;
+    background-color: white;
+    color: #2874f0;
+    border-color: #2874f0;
+    border:outset
+}
+input.ng-invalid{
+    border-left: 5px solid red;
+}
+input.ng-valid{
+    border-left: 5px solid green;
+}

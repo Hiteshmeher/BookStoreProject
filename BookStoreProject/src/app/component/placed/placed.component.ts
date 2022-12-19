@@ -14,6 +14,6 @@ export class PlacedComponent implements OnInit {
   }
 
   onClickCont(){
-    this.router.navigate([""])
+    this.router.navigate(["/home"])
   }
 }

@@ -6,8 +6,9 @@
         <input class="search"  type="text" name="search" placeholder="Search">
       </div>
       <div><img class="search-logo" src="../../../assets/search.png" alt="search logo"></div>
-      <div class="cart-name" (click)="onCartClick()">Cart</div>
+      <div class="cart-name" (click)="onCartClick()">Cart({{cartAll}})</div>
       <div><img class="cart-logo" src="../../../assets/cartlogo.png" (click)="onCartClick()" alt="cart logo"></div>
+      <div ><img  class="logout-logo" style="height: 25px ;" src="../../../assets/logouticon.png" (click)="onClickLogout()" alt="log out"></div>
     </div>
 </header>
 

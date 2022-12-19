@@ -1,38 +1,42 @@
+<app-header></app-header>
+
 <mat-vertical-stepper>
-    <mat-step label="My Cart">
-        <div class="part1">
+    <div >
+    <mat-step label="My Cart" >
+        <div class="part1" *ngFor="let cart of allCart">
             <div class="book-image"><img class="book-pic" src="../../../assets/book/book4.jpeg" alt=""></div>
             <div>
-                <div class="book-title">Hell of A Book</div>
-                <div class="auther-name">By Hitesh Meher</div>
-                <div class="book-price">Rs.1000</div>
+                <div class="book-title">{{cart.book.bookName}}</div>
+                <div class="auther-name">By {{cart.book.authorName}}</div>
+                <div class="book-price">Rs.{{cart.totalPrice}}</div>
                 <div class="part2">
-                <img class="minus" style="height: 20px;" src="../../../assets/minus icon.png" alt="+">
-                <input  class="number" type="text" value="1">
-                <img class="plus" style="height: 20px" src="../../../assets/plus icon.png" alt="-">
+                <button class="minus" (click)="onClickMinus()">-</button>
+                <input  class="number" type="text" value="{{cart.quantity}}">
+                <button class="plus" (click)="onClickPlus()">+</button>
                 <span class="remove-text">Remove</span>
                 </div>    
             </div>
         </div>
         <button mat-raised-button class="select-address" matStepperNext >Select Address</button>
     </mat-step>
+    </div>
 
     <mat-step label="Customer Details">
         <div class="cust-detail">
             <div>
-            <input class="text-input" type="text" name="name" placeholder="Name">
-            <input class="text-input" type="text" name="phoneno" placeholder="Phone number">
+            <input class="text-input" type="text" name="name" placeholder="Name" required>
+            <input class="text-input" type="text" name="phoneno" placeholder="Phone number" required>
             </div>
             <div>
-            <input class="text-input" type="text" name="pincode" placeholder="Pin Code">
-            <input class="text-input" type="text" name="locality" placeholder="Locality">
+            <input class="text-input" type="text" name="pincode" placeholder="Pin Code" required>
+            <input class="text-input" type="text" name="locality" placeholder="Locality" required>
             </div>
             <div>
-            <input class="address-input" type="text" name="address" placeholder="Address">
+            <input class="address-input" type="text" name="address" placeholder="Address" required>
             </div>
             <div>
-            <input class="text-input" type="text" name="city" placeholder="City/Town">
-            <input class="text-input" type="text" name="landmark" placeholder="Landmark">
+            <input class="text-input" type="text" name="city" placeholder="City/Town" required>
+            <input class="text-input" type="text" name="landmark" placeholder="Landmark" required>
             </div>
             <div class="type">
             Type
@@ -64,3 +68,4 @@
         </div>
     </mat-step>
 </mat-vertical-stepper>
+<app-footer></app-footer>

@@ -1,26 +1,16 @@
-
-
-.book2{
-    grid-row: 1;
-    grid-column: 2;
-}
-.book3{
-    grid-row: 1;
-    grid-column: 3;
-}
-.book4{
-    grid-row: 1;
-    grid-column: 4;
-}
 .book{
-    padding: 0.5cm 1cm 1cm 1cm;
+    padding: 1cm;
     background-color:#D8D0CE;
-    display: inline-grid;
     justify-content: center;
     border-radius: 5px;
-    
 }
-.home-content{
+
+.book-main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 1cm;
+    margin-top: 0.5cm;
 }
 .book-text{
     margin-left:4%;
@@ -34,11 +24,6 @@
 }
 .sort-content{
     margin-left: 76.3%;
-}
-mat-card{
-    display: grid;
-    justify-content: center;
-    gap: 1cm;
 }
 .book-title{
     font-size: x-large;
@@ -61,4 +46,13 @@ mat-card{
 .wishlist{
     margin-left: 5px;
     background-color: white;
+}
+.book-desc{
+    display: none;
+}
+
+.wishlist:hover + .book-desc{
+    cursor: pointer;
+    display: grid;
+    color: red;
 }

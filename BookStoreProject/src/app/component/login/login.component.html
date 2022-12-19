@@ -1,0 +1,20 @@
+    <mat-card class="login-content" [formGroup]="loginForm">
+        <mat-card-content class="login-main">
+           
+            <h1 class="login-text">Login</h1>
+
+            <label for="email">Email</label>
+            <input class="email-text" type="email" [(ngModel)]="userLogin.email" formControlName="email" name="email" placeholder="Enter your Email">
+            
+            <label for="password">Password</label>
+            <input class="password-text" type="password" [(ngModel)]="userLogin.password" formControlName="password" name="password" placeholder="Enter your Password">
+            
+            <button mat-raised-button class="login-btn" (click)="onClickLogin()">Log in</button>
+            
+            <div class="register-text">if you haven't yet register click here
+                <button mat-raised-button class="register-btn" (click)="onClickRegister()">Register</button>
+
+            </div>
+        </mat-card-content>
+       
+      </mat-card>
